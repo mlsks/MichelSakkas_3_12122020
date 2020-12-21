@@ -9,6 +9,7 @@
 }
 body {
   font-family: 'Roboto', sans-serif;
+  color: #210144;
 }
 @media (min-width: 37.5rem) {
   body {
@@ -259,6 +260,16 @@ h1 {
     margin-left: 30px;
   }
 }
+#restaurants h2 {
+  padding-top: 1.5rem;
+  padding-left: 20px;
+  text-align: left;
+}
+@media (min-width: 37.5rem) {
+  #restaurants h2 {
+    padding-left: 100px;
+  }
+}
 .restaurants__card {
   width: 331px;
   padding-left: 22px;
@@ -331,9 +342,9 @@ h1 {
   font-size: 1.7rem;
   color: black;
 }
-.restaurant__nom > a {
+.restaurants__card > a {
   text-decoration: none;
-  color: black;
+  color: #210144;
 }
 .fas.fa-heart:hover,
 .far.fa-heart:hover {
