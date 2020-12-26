@@ -60,7 +60,6 @@ body {
   }
   100% {
     opacity: 0;
-    height: -100vh;
     z-index: -99;
   }
 }
