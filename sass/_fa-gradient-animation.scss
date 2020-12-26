@@ -1,0 +1,36 @@
+// .fas:hover::before,
+.far:hover::before {
+  background: linear-gradient(180deg, $secondary 26%, $primary 100%);
+  font-weight: 900;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: remplir 1.2s ease;
+}
+
+@keyframes remplir {
+  0% {
+    background: linear-gradient(180deg, $secondary 26%, $primary 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  25% {
+    background: linear-gradient(180deg, $primary 26%, $secondary 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  50% {
+    background: linear-gradient(180deg, $secondary 26%, $primary 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  75% {
+    background: linear-gradient(180deg, $primary 26%, $secondary 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  100% {
+    background: linear-gradient(180deg, $secondary 26%, $primary 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}

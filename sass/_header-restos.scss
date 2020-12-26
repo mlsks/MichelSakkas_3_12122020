@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Shrikhand&display=swap');
+
+@import '_variables.scss';
+
+@mixin media-min-width($width) {
+  @media (min-width: $width) {
+    @content;
+  }
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #210144;
+  background-color: $tertiary;
+  @include media-min-width(37.5rem) {
+    font-size: 125%;
+  }
+}
+
+#logo {
+  position: relative;
+  font-family: $logo;
+  font-size: 2rem;
+  line-height: 4.5rem;
+  text-align: center;
+  background-color: white;
+  width: 375px !important;
+  @include media-min-width(37.5rem) {
+    font-size: 2.6rem;
+  }
+}
+
+h1 {
+  font-family: $logo;
+  font-size: 1.6rem;
+  line-height: 4.5rem;
+  text-align: center;
+  margin-top: -1rem;
+
+  @include media-min-width(37.5rem) {
+    font-size: 1.7rem;
+  }
+}
+
+i.fas.fa-arrow-left {
+  position: absolute;
+  font-size: 1.2rem;
+  color: $primary;
+  padding-left: 5px;
+  padding-top: 0.5rem;
+}
+
+i.far.fa-heart {
+  position: static;
+  color: #210144;
+  margin-top: 0.4rem;
+}
+
+#nom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
