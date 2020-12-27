@@ -18,6 +18,7 @@ body {
 @media (min-width: 37.5rem) {
   body {
     font-size: 125%;
+    border-top: 0.5rem ridge #9356dc;
   }
 }
 #logo {
@@ -106,6 +107,9 @@ img {
   background-color: #e7e7e7;
   width: 375px !important;
   margin-top: -2rem;
+  border-top: 0.3rem dashed #ff79da;
+  border-left: 0.3rem dashed #ff79da;
+  border-right: 0.3rem dashed #ff79da;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
 }
@@ -120,6 +124,12 @@ img {
   background-color: #e7e7e7;
   width: 375px !important;
   overflow: visible;
+}
+@media (min-width: 37.5rem) {
+  #menu {
+    border-left: 0.3rem dashed #ff79da;
+    border-right: 0.3rem dashed #ff79da;
+  }
 }
 h3 {
   margin: 0;
@@ -438,16 +448,8 @@ footer {
 @media (min-width: 37.5rem) {
   footer {
     padding-left: 80px;
+    border-top: 0.5rem ridge #9356dc;
   }
-}
-#footer__logo {
-  font-family: 'Shrikhand', cursive;
-  font-size: 1.2rem;
-  text-align: start;
-  padding-right: 120px;
-  padding-left: 22px;
-  padding-top: 2rem;
-  padding-bottom: 1.5rem;
 }
 footer p {
   padding-left: 22px;
@@ -464,6 +466,15 @@ footer > div {
 }
 footer > div > a:hover {
   color: #ff79da;
+}
+#footer__logo {
+  font-family: 'Shrikhand', cursive;
+  font-size: 1.2rem;
+  text-align: start;
+  padding-right: 120px;
+  padding-left: 22px;
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
 }
 .fa-utensils {
   padding-right: 6px;

@@ -26,6 +26,7 @@ body {
   background-color: $tertiary;
   @include media-min-width(37.5rem) {
     font-size: 125%;
+    border-top: 0.5rem ridge $primary;
   }
 }
 
