@@ -76,62 +76,60 @@ p {
   overflow: hidden;
   box-shadow: 0 10px 20px #00000030, 0 6px 6px #0000003b;
   transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  a {
+    text-decoration: none;
+    color: #210144;
+  }
+  .prix {
+    font-weight: bold;
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+    transition: 0.5s;
+  }
+  .choix {
+    position: absolute;
+    width: 60px;
+    height: 70px;
+    background-color: $tertiary;
+    top: 0;
+    right: -70px;
+    display: block;
+    border-bottom-right-radius: 16px;
+    border-top-right-radius: 16px;
+  }
+  i {
+    position: absolute;
+    display: block;
+    font-size: 1.6rem;
+    top: 1.35rem;
+    left: 1.1rem;
+    color: white;
+  }
 }
 
 .carte:hover {
   cursor: pointer;
   box-shadow: 0 1px 3px #0000001f, 0 1px 2px #0000003d;
-}
 
-.carte:hover p {
-  max-width: 200px;
-  margin-right: -0.1rem;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-.prix {
-  font-weight: bold;
-  position: absolute;
-  top: 2rem;
-  right: 1rem;
-  transition: 0.5s;
-}
-
-.carte:hover .prix {
-  right: 1.2rem;
-  transform: translate(-60px, 0px);
-}
-
-.choix {
-  position: absolute;
-  width: 60px;
-  height: 70px;
-  background-color: $tertiary;
-  top: 0;
-  right: -70px;
-  display: block;
-  border-bottom-right-radius: 16px;
-  border-top-right-radius: 16px;
-}
-
-.carte:hover .choix {
-  transform: translate(-70px, 0px);
-  transition: ease-out 0.5s;
-}
-
-i {
-  position: absolute;
-  display: block;
-  font-size: 1.6rem;
-  top: 1.35rem;
-  left: 1.1rem;
-  color: white;
-}
-
-.carte:hover i {
-  animation: rotation 0.5s ease-in;
+  p {
+    max-width: 200px;
+    margin-right: -0.1rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .prix {
+    right: 1.2rem;
+    transform: translate(-60px, 0px);
+  }
+  .choix {
+    transform: translate(-70px, 0px);
+    transition: ease-out 0.5s;
+  }
+  i {
+    animation: rotation 0.5s ease-in;
+  }
 }
 
 @keyframes rotation {
@@ -159,10 +157,18 @@ i {
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  margin-top: 2rem;
+  margin-bottom: 3.5rem;
+  margin-left: auto;
+  margin-right: auto;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   box-shadow: 0 10px 20px #00000030, 0 6px 6px #0000003b;
   transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+  a {
+    text-decoration: none;
+    color: white;
+  }
 }
 
 #bouton:hover {
@@ -170,13 +176,6 @@ i {
   background-image: -webkit-linear-gradient(top, $primary, $secondary);
   box-shadow: 0 1px 3px #0000001f, 0 1px 2px #0000003d;
   transform: scale(0.95);
-}
-
-#bouton {
-  margin-top: 2rem;
-  margin-bottom: 3.5rem;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .fade-in {

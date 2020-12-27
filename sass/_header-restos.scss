@@ -16,6 +16,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   color: #210144;
@@ -54,8 +58,8 @@ i.fas.fa-arrow-left {
   position: absolute;
   font-size: 1.2rem;
   color: $primary;
-  padding-left: 5px;
-  padding-top: 0.5rem;
+  top: 1.75rem;
+  left: 1.4rem;
 }
 
 i.far.fa-heart {
