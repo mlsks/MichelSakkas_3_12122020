@@ -107,11 +107,15 @@ img {
   background-color: #e7e7e7;
   width: 375px !important;
   margin-top: -2rem;
-  border-top: 0.3rem dashed #ff79da;
-  border-left: 0.3rem dashed #ff79da;
-  border-right: 0.3rem dashed #ff79da;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
+}
+@media (min-width: 37.5rem) {
+  .fond-gris {
+    border-top: 0.3rem dashed #ff79da;
+    border-left: 0.3rem dashed #ff79da;
+    border-right: 0.3rem dashed #ff79da;
+  }
 }
 #menu {
   display: -webkit-box;

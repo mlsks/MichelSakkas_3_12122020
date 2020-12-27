@@ -41,11 +41,13 @@ img {
   background-color: #e7e7e7;
   width: 375px !important;
   margin-top: -2rem;
-  border-top: 0.3rem dashed $secondary;
-  border-left: 0.3rem dashed $secondary;
-  border-right: 0.3rem dashed $secondary;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
+  @include media-min-width(37.5rem) {
+    border-top: 0.3rem dashed $secondary;
+    border-left: 0.3rem dashed $secondary;
+    border-right: 0.3rem dashed $secondary;
+  }
 }
 
 #menu {
