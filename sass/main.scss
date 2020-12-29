@@ -329,34 +329,51 @@ h1 {
     padding-bottom: 2rem;
 }
 .btn_explorer {
-    background: #ff79da;
-    background-image: -webkit-linear-gradient(top, #ff79da, #9356dc);
+    background: linear-gradient(
+        to right,
+        rgba(255, 121, 218, 1),
+        rgba(147, 86, 220, 1)
+    );
+    background-image: -webkit-linear-gradient(
+        to right,
+        rgba(255, 121, 218, 1),
+        rgba(147, 86, 220, 1)
+    );
+    text-align: center;
     border-radius: 50px;
     height: 50px;
     line-height: 50px;
     color: #ffffff;
-    font-family: Open Sans;
+    font-weight: 400;
     width: 220px;
     font-size: 16px;
-    font-weight: 500;
     padding: 0;
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
-    -webkit-box-shadow: 0 10px 20px #00000030, 0 6px 6px #0000003b;
-    box-shadow: 0 10px 20px #00000030, 0 6px 6px #0000003b;
-    -webkit-transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
-    transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
-}
-.btn_explorer:hover {
-    background: #9356dc;
-    background-image: -webkit-linear-gradient(top, #9356dc, #ff79da);
     -webkit-box-shadow: 0 1px 3px #0000001f, 0 1px 2px #0000003d;
     box-shadow: 0 1px 3px #0000001f, 0 1px 2px #0000003d;
-    -webkit-transform: scale(0.95);
-    transform: scale(0.95);
+    -webkit-transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+.btn_explorer:hover {
+    font-weight: 500;
+    background: linear-gradient(
+        to right,
+        rgba(255, 121, 218, 0.85),
+        rgba(147, 86, 220, 0.85)
+    );
+    background-image: -webkit-linear-gradient(
+        to right,
+        rgba(255, 121, 218, 0.85),
+        rgba(147, 86, 220, 0.85)
+    );
+    -webkit-box-shadow: 0 10px 20px #00000030, 0 6px 6px #0000003b;
+    box-shadow: 0 10px 20px #00000030, 0 6px 6px #0000003b;
+    -webkit-transform: scale(1.02);
+    transform: scale(1.02);
 }
 .btn_explorer {
     margin-bottom: 3.75rem;
